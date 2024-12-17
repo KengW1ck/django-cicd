@@ -1,0 +1,17 @@
+networks:
+  django_demo:
+    name: django_demo
+    driver: bridge
+
+services:
+  django:
+    build: .
+    image: theerachai2530/demodjango:0.0.1
+    container_name: bilddjango
+    volumes:
+      - .:/webapp
+    ports:
+      - "8000:8000"
+    networks:
+      - django_demo
+    restart: always
