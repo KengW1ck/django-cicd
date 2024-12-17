@@ -27,5 +27,6 @@ jobs:
         with:
           context: .
           file: ./webapp/Dockerfile
+          file: ./webapp/requirements.txt
           push: true
           tags: theerachai2530/django-cicd-test:latest
