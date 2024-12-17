@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./Dockerfile
+          file: ./webapp/Dockerfile
           push: true
           tags: theerachai2530/django-cicd-test:latest
