@@ -4,7 +4,7 @@ ENV PYTHONBUFFERED=1
 
 WORKDIR /webapp
 
-COPY requirements.txt /webapp/requirements.txt
+COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
